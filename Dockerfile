@@ -14,8 +14,7 @@ RUN apt-get update && \
 # Download and decompress Nginx
 RUN mkdir -p /tmp/build/nginx && \
     cd /tmp/build/nginx && \
-    wget -O ${NGINX_VERSION}.tar.gz https://nginx.org/download/${NGINX_VERSION}.ta
-r.gz && \
+    wget -O ${NGINX_VERSION}.tar.gz https://nginx.org/download/${NGINX_VERSION}.tar.gz && \
     tar -zxf ${NGINX_VERSION}.tar.gz
 
 # Download and decompress RTMP module
